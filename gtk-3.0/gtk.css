@@ -1,0 +1,123 @@
+ /* purple #D13270 */
+@define-color bg rgba(209, 50, 112, 0.9);
+@define-color bg_darken rgba(209, 50, 112, 0.75);
+ /* cream */
+@define-color fg #FFE8C9;
+@define-color fg_lighten rgb(241, 219, 190);
+/* yellow */
+@define-color fg_alt #FABD33;
+ /* blue #3C4D81 */
+@define-color bg_alt #3C4D81;
+@define-color clear rgba(0, 0, 0, 0);
+
+@define-color input_bg rgba(116, 26, 61, 0.5);
+@define-color input_fg #FFE8C9;
+@define-color input_brd rgba(209, 50, 112, 0.75);
+
+@define-color btn_bg #FFE8C9;
+@define-color btn_fg #D13270;
+
+
+* {
+	background-clip: padding-box;
+	-GtkToolButton-icon-spacing: 4;
+	-GtkDialog-button-spacing: 4;
+	-GtkDialog-action-area-border: 0;
+	-gtk-outline-radius: 0px;
+	outline-style: none;
+	outline-offset: 0px;
+	outline-width: 0px;
+	font-family: 'Adobe Source Code Pro';
+}
+
+#panel_window {
+  font-weight: 700;
+  background-color: @bg;
+  color: @fg;
+}
+
+#panel_window menubar > menuitem {
+	padding: 0 4px;
+	margin-left: 1px;
+	background-color: @btn_bg;
+	color: @btn_fg;
+}
+
+#panel_window menubar menuitem:disabled {
+	color: inherit; 
+}
+
+#panel_window menubar menuitem:disabled label {
+	color: inherit; 
+}
+
+#panel_window menubar menu > menuitem {
+	border-bottom: 1px dashed @btn_fg;
+	background-color: @btn_bg;
+	color: @btn_fg;
+	padding: 4px;
+}
+
+#panel_window menubar menu > menuitem:hover,
+#panel_window menubar menu > menuitem:active {
+	background-color: @btn_fg;
+	color: @btn_bg;
+}
+
+#panel_window menubar menu > menuitem:last-child {
+	border-bottom: none;
+}
+
+#content_frame {
+	background-color: @bg;
+	border: none;
+}
+
+#content_frame button, 
+#content_frame button:hover,
+#content_frame button:active, 
+#content_frame button:checked,
+#content_frame button:disabled,
+entry
+{
+	background-color: @input_bg;
+	border: 1px solid @input_brd;
+	padding: 4px;
+}
+
+#buttonbox_frame {
+	background-color: @bg;
+	padding-top: 8px;
+}
+
+#buttonbox_frame button, 
+#buttonbox_frame button:hover,
+#buttonbox_frame button:active, 
+#buttonbox_frame button:checked,
+#buttonbox_frame button:disabled {
+	/* login button */
+	background-color: @btn_bg;
+	color: @btn_fg;
+	border: 1px solid @input_brd;
+	padding: 4px;
+	min-width: 70px;
+}
+
+#login_window #user_combobox menu {
+	background-color: @clear;
+}
+
+#login_window #user_combobox menu > menuitem {
+	background-color: rgb(131, 55, 84);
+	border-bottom: 1px dashed @btn_fg;
+	color: @input_fg;
+}
+
+#login_window #user_combobox menu > menuitem:hover {
+	background-color: @btn_fg;
+	color: @btn_bg;
+}
+
+#login_window #user_combobox menu > menuitem:last-child {
+	border-bottom: none;
+}

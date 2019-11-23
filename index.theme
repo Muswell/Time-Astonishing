@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Time? Astonishing!
+Comment=Quick and simple compliment to my i3 theme for login
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Time? Astonishing!
+MetacityTheme=Time? Astonishing!
+IconTheme=Adwaita
+CursorTheme=Adwaita
+ButtonLayout=close,minimize,maximize:menu
